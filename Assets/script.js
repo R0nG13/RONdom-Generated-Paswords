@@ -23,13 +23,28 @@ THEN the password is either displayed in an alert or written to the page
 var generateBtn = document.querySelector("#generate");
 
 // Write password to the #password input
-function writePassword() {
-  var password = generatePassword();
-  var passwordText = document.querySelector("#password");
+// function writePassword() {
+//  var password = generatePassword();
+//  var passwordText = document.querySelector("#password");
 
-  passwordText.value = password;
+  // passwordText.value = password;
 
-}
+// }
 
 // Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
+//generateBtn.addEventListener("click", writePassword);
+
+
+function determineLength() {
+  var passwordLength = 0;
+  while( !(passwordLength >= 8 && passwordLength <= 128)) {
+    passwordLength = Number( window.prompt("Please enter password length (btw 8 - 128):"));
+        console.log (passwordLength);
+  }
+  return passwordLength;
+}
+
+determineLength();
+
+
+

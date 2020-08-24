@@ -30,6 +30,11 @@ header {
   color: hsl(206, 17%, 28%);
 }
 
+header h1 {
+  color: hsl(360, 91%, 36%);
+  text-align: center;
+}
+
 .card {
   background-color: hsl(0, 0%, 100%);
   border-radius: 5px;
@@ -48,6 +53,10 @@ header {
   width: 100%;
   background: #e7e9eb;
   height: 2px;
+}
+.card-header h2 {
+  color: hsl(360, 91%, 36%);
+  text-align: center;
 }
 
 .card-body {
